@@ -1,0 +1,13 @@
+{
+  "name": "Exchange",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "loadsh": "0.0.4",
+    "lodash": "^4.17.15",
+    "yargs": "^15.3.1"
+  }
+}
