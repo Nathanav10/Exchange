@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d2da2a-e4cf-4be4-8795-f5ee59057984" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Connector/ces-connector.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/converter-enum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/converter-enum.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/converter-enum.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/converter-interface.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/converter-interface.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/converter-interface.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/coverter-factory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/coverter-factory.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/coverter-factory.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/exchange-rates-converter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/exchange-rates-converter.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conversion/exchange-rates-converter.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/exchange-operator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/exchange-operator.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/exchange-operator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connector/ces-connector.js" beforeDir="false" afterPath="$PROJECT_DIR$/Connector/ces-connector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connector/ces-connector.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Connector/ces-connector.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connector/ces-connector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Connector/ces-connector.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main.ts" afterDir="false" />
@@ -36,19 +23,19 @@
     <session id="2043517332">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="35" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.3" value="9" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="8" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -70,21 +57,21 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="30" />
+          <entry key="TypeScriptServerServiceImpl" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="12" />
           <entry key="json" value="67" />
-          <entry key="ts" value="5166" />
+          <entry key="ts" value="5484" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="65" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="TypeScript" value="5166" />
+          <entry key="TypeScript" value="5484" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
@@ -98,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1150">
-              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state relative-caret-position="215">
+              <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -110,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Connector/ces-connector.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+            <state relative-caret-position="697">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -133,6 +120,8 @@
       <find>ignore</find>
       <find>axios</find>
       <find>axio</find>
+      <find>endlo</find>
+      <find>s</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -234,7 +223,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" application-parameters="endLoan --id abc -t ils" path-to-js-file="main.js" working-dir="$PROJECT_DIR$">
+    <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" application-parameters="endLoan --id qwe -t ils" path-to-js-file="main.js" working-dir="$PROJECT_DIR$">
       <method v="2">
         <option name="NpmBeforeRunTask" enabled="true">
           <package-json value="$PROJECT_DIR$/package.json" />
@@ -287,12 +276,18 @@
       <workItem from="1589370075078" duration="1792000" />
       <workItem from="1589371903945" duration="1398000" />
       <workItem from="1589373717424" duration="1792000" />
-      <workItem from="1589375531473" duration="866000" />
+      <workItem from="1589375531473" duration="1791000" />
+      <workItem from="1589381211163" duration="1791000" />
+      <workItem from="1589383025192" duration="1706000" />
+      <workItem from="1589385132661" duration="1795000" />
+      <workItem from="1589386948858" duration="1792000" />
+      <workItem from="1589388760681" duration="862000" />
+      <workItem from="1589390575434" duration="1605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46921000" />
+    <option name="totallyTimeSpent" value="57397000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -305,7 +300,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.20429252" />
       <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.24960254" />
@@ -347,6 +341,10 @@
         <option value="$PROJECT_DIR$/../CES/Controller/exchange-controller.js" />
         <option value="$PROJECT_DIR$/../CES/Controller/config-conroller.js" />
         <option value="$PROJECT_DIR$/../CES/Controller/config-conroller.js.map" />
+        <option value="$PROJECT_DIR$/../CES/middleware/authentication-middleware.js.map" />
+        <option value="$PROJECT_DIR$/../CES/middleware/authentication-middleware.js" />
+        <option value="$PROJECT_DIR$/../CES/middleware/permission-middleware.js" />
+        <option value="$PROJECT_DIR$/../CES/middleware/permission-middleware.js.map" />
       </list>
     </option>
   </component>
@@ -370,6 +368,24 @@
           <url>file://$PROJECT_DIR$/main.ts</url>
           <line>100</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/main.ts</url>
+          <line>89</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/main.ts</url>
+          <line>92</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/main.ts</url>
+          <line>84</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -416,8 +432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1150">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="215">
+          <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -426,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Connector/ces-connector.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        <state relative-caret-position="697">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
         </state>
       </provider>
     </entry>

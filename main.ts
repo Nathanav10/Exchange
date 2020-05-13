@@ -1,11 +1,10 @@
 import * as yargs from "yargs"
 import {CesConnector} from "./Connector/ces-connector";
 
-
 // TODO: extract to own file
 const args = yargs
     .usage('Usage: $0 <command> [options]')
-    .example('$0 exchange -a 1000.00 -b USD -t ILS', 'exchange and print receipt')
+    .example('$0 exchange -a 1000 -b USD -t ILS', 'exchange and print receipt')
     .command('exchange', 'Exchanges desired amount', {
         amount: {
             description: 'Desired amount to exchange',
@@ -25,11 +24,16 @@ const args = yargs
     })
     .nargs(['a', 'b'], 1)
     .command('config', 'Configure exchange details', {
-        base_commission: {
-            description: 'Desired commission',
-            alias: 'bc',
-            type: 'number',
-        }
+        param: {
+            description: 'Parameter to change ',
+            alias: 'p',
+            type: 'string',
+        },
+        value: {
+            description: 'Value',
+            alias: 'v',
+            type: 'any',
+        },
     })
     .nargs('bc', 1)
     .command('loan', 'Start loan', {
@@ -70,16 +74,15 @@ if (args._.includes('exchange') && args.amount && args.base) {
     cesConnector.Exchange(args.amount, args.base, args.target).then(receipt => {
         console.log(receipt)
     }).catch(err => {
-        console.log(err.response.data.message)
+        console.log(err.response && err.response.data ||"Failed to exchange")
     })
 }
 
-else if (args._.includes('config') && args.base_commission) {
-    // TODO: edit any param not just baseCommission (nargs 2)
-    cesConnector.Configure("baseCommission", args.bc).then(res => {
+else if (args._.includes('config') && args.param && args.value) {
+    cesConnector.Configure(args.param, args.value).then(res => {
         console.log("Parameter successfully changed")
     }).catch(err => {
-        console.log("Failed to change parameter")
+        console.log(err.response && err.response.data ||"Failed to change parameter")
     })
 }
 
@@ -87,7 +90,7 @@ else if (args._.includes('loan') && args.amount && args.base) {
     cesConnector.StartLoan(args.amount, args.base).then(receipt => {
         console.log(receipt)
     }).catch(err => {
-        console.log("Failed to start loan")
+        console.log(err.response && err.response.data ||"Failed to start loan")
     })
 }
 
@@ -95,6 +98,6 @@ else if (args._.includes('endLoan') && args.id && args.target) {
     cesConnector.EndLoan(args.id, args.target).then(receipt => {
         console.log(receipt)
     }).catch(err => {
-        console.log("Failed to end loan")
+        console.log(err.response && err.response.data || "Failed to end loan")
     })
 }

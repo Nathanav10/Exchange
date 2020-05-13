@@ -10,6 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = require("axios");
+const ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InN0b3JlMSIsImlhdCI6MTU4OTM4NzUwNH0.2R-BDPxyDIQkdy2mCkqKnx5naa98fcyMyZv8ckiKfqE";
+const CLIENT_ID = "store1";
 class CesConnector {
     constructor() {
         // TODO: export to config file
@@ -19,6 +21,7 @@ class CesConnector {
     Exchange(amount, base, target) {
         return __awaiter(this, void 0, void 0, function* () {
             return axios_1.default.get(`${this.apiUrl}/exchange`, {
+                headers: { ClientId: CLIENT_ID, Authorization: ACCESS_TOKEN },
                 params: {
                     amount: amount,
                     base: base,
@@ -31,7 +34,13 @@ class CesConnector {
     }
     Configure(param, value) {
         return __awaiter(this, void 0, void 0, function* () {
-            const options = { headers: { "Content-Type": "application/json" } };
+            const options = {
+                headers: {
+                    "Content-Type": "application/json",
+                    ClientId: CLIENT_ID,
+                    Authorization: ACCESS_TOKEN
+                }
+            };
             return axios_1.default.put(`${this.apiUrl}/config`, {
                 param: param,
                 value: value
@@ -41,7 +50,13 @@ class CesConnector {
         });
     }
     StartLoan(amount, base) {
-        const options = { headers: { "Content-Type": "application/json" } };
+        const options = {
+            headers: {
+                "Content-Type": "application/json",
+                ClientId: CLIENT_ID,
+                Authorization: ACCESS_TOKEN
+            }
+        };
         return axios_1.default.post(`${this.apiUrl}/loan`, {
             amount: amount,
             base: base
@@ -50,7 +65,13 @@ class CesConnector {
         });
     }
     EndLoan(loanId, target) {
-        const options = { headers: { "Content-Type": "application/json" } };
+        const options = {
+            headers: {
+                "Content-Type": "application/json",
+                ClientId: CLIENT_ID,
+                Authorization: ACCESS_TOKEN
+            }
+        };
         return axios_1.default.post(`${this.apiUrl}/endLoan`, {
             loanId: loanId,
             target: target
