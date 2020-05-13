@@ -1,22 +1,6 @@
 import * as yargs from "yargs"
-import {ConverterFactory} from "./Conversion/coverter-factory";
-import {Converter} from "./Conversion/converter-enum";
-import {ExchangeOperator} from "./Exchange/exchange-operator";
+import {CesConnector} from "./Connector/ces-connector";
 
-
-// const args = yargs
-//     .usage('Usage: $0 <command> [options]')
-//     .command('exchange', 'Exchanges desired amount')
-//     .example('$0 exchange -a 1000.00 USD', 'exchange and print receipt')
-//     .alias('a', 'amount')
-//     .alias('c', 'currency')
-//     .nargs('a', 1)
-//     .nargs('c', 1)
-//     .describe('a', 'Amount to exchange')
-//     .describe('c', 'Currency to exchange')
-//     .demandOption(['a','c'])
-//     .help('h')
-//     .alias('h', 'help').argv;
 
 // TODO: extract to own file
 const args = yargs
@@ -39,32 +23,78 @@ const args = yargs
         description: 'Currency to exchange to',
         type: 'string',
     })
-    .demandOption(['a', 'b'])
-    .command('loan', 'Loan and exchanges desired amount', {
-        amount: {
-            description: 'Desired amount to loan',
-            alias: 'l',
+    .nargs(['a', 'b'], 1)
+    .command('config', 'Configure exchange details', {
+        base_commission: {
+            description: 'Desired commission',
+            alias: 'bc',
             type: 'number',
         }
     })
-    .demandOption(['l'])
+    .nargs('bc', 1)
+    .command('loan', 'Start loan', {
+        amount: {
+            description: 'Desired amount',
+            alias: 'a',
+            type: 'number',
+        },
+        base: {
+            description: 'Base currency',
+            alias: 'b',
+            type: 'string',
+        }
+    })
+    .command('endLoan', 'End loan', {
+        id: {
+            description: 'Loan id',
+            type: 'string'
+        },
+        target: {
+            description: 'Target currency',
+            alias: 't',
+            type: 'string',
+        }
+
+    })
     .help()
     .alias('help', 'h')
     .argv;
 
-// TODO: create factory/strategy to deal with different types of commands
-// TODO: command parser - func to return enum of command by input args
-// TODO: create factory to retrieve api data by multiple sources
+let cesConnector = new CesConnector();
 
-if (!args.t) {
-    // TODO: decide id ILS TO ILS is acceptable
-    args.t = args.target = "ILS";
+if (args._.includes('exchange') && args.amount && args.base) {
+    if (!args.target) {
+        // TODO: decide id ILS TO ILS is acceptable
+        args.t = args.target = "ILS";
+    }
+    cesConnector.Exchange(args.amount, args.base, args.target).then(receipt => {
+        console.log(receipt)
+    }).catch(err => {
+        console.log(err.response.data.message)
+    })
 }
 
-if (args.a && args.b) {
-    // TODO: change amount division
-    let exchangeOperator = new ExchangeOperator(args, Converter.ExchangeRates);
-    exchangeOperator.Exchange().then(receipt => {
+else if (args._.includes('config') && args.base_commission) {
+    // TODO: edit any param not just baseCommission (nargs 2)
+    cesConnector.Configure("baseCommission", args.bc).then(res => {
+        console.log("Parameter successfully changed")
+    }).catch(err => {
+        console.log("Failed to change parameter")
+    })
+}
+
+else if (args._.includes('loan') && args.amount && args.base) {
+    cesConnector.StartLoan(args.amount, args.base).then(receipt => {
         console.log(receipt)
+    }).catch(err => {
+        console.log("Failed to start loan")
+    })
+}
+
+else if (args._.includes('endLoan') && args.id && args.target) {
+    cesConnector.EndLoan(args.id, args.target).then(receipt => {
+        console.log(receipt)
+    }).catch(err => {
+        console.log("Failed to end loan")
     })
 }

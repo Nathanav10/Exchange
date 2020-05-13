@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d2da2a-e4cf-4be4-8795-f5ee59057984" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Conversion/converter-enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Conversion/converter-interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Conversion/coverter-factory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Conversion/exchange-rates-converter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchange/exchange-operator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Connector/ces-connector.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/converter-enum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/converter-enum.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/converter-enum.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/converter-interface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/converter-interface.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/converter-interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/coverter-factory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/coverter-factory.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/coverter-factory.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/exchange-rates-converter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/exchange-rates-converter.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conversion/exchange-rates-converter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/exchange-operator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/exchange-operator.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/exchange-operator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,52 +36,55 @@
     <session id="2043517332">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="29" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="js" value="1" />
-          <entry key="json" value="8" />
-          <entry key="ts" value="15" />
+          <entry key="json" value="13" />
+          <entry key="ts" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="9" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="TypeScript" value="15" />
-          <entry key="tsconfig" value="3" />
+          <entry key="TypeScript" value="18" />
+          <entry key="tsconfig" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="14" />
+          <entry key="TypeScriptServerServiceImpl" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="12" />
           <entry key="json" value="67" />
-          <entry key="ts" value="3516" />
+          <entry key="ts" value="5166" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="65" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="TypeScript" value="3516" />
+          <entry key="TypeScript" value="5166" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
@@ -82,11 +95,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            <state relative-caret-position="-1150">
+              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -95,49 +108,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/Connector/ces-connector.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Exchange/exchange-operator.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Conversion/exchange-rates-converter.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="663">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -157,6 +131,8 @@
     <findStrings>
       <find>get</find>
       <find>ignore</find>
+      <find>axios</find>
+      <find>axio</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,8 +157,9 @@
         <option value="$PROJECT_DIR$/Exchange/exchange-operation-interface.ts" />
         <option value="$PROJECT_DIR$/Exchange/exchange-operation.ts" />
         <option value="$PROJECT_DIR$/Exchange/exchange-operator.ts" />
-        <option value="$PROJECT_DIR$/main.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Connector/ces-connector.ts" />
+        <option value="$PROJECT_DIR$/main.ts" />
       </list>
     </option>
   </component>
@@ -201,8 +178,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-69" />
-    <option name="y" value="-39" />
+    <option name="x" value="-693" />
+    <option name="y" value="-27" />
     <option name="width" value="1890" />
     <option name="height" value="930" />
   </component>
@@ -222,7 +199,7 @@
             <path>
               <item name="Exchange" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exchange" type="462c0819:PsiDirectoryNode" />
-              <item name="Exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="Connector" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,7 +210,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -257,7 +234,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" application-parameters="exchange -a 100 -b &quot;usd&quot; -t ils" path-to-js-file="main.js" working-dir="$PROJECT_DIR$">
+    <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" application-parameters="endLoan --id abc -t ils" path-to-js-file="main.js" working-dir="$PROJECT_DIR$">
       <method v="2">
         <option name="NpmBeforeRunTask" enabled="true">
           <package-json value="$PROJECT_DIR$/package.json" />
@@ -294,12 +271,28 @@
       <workItem from="1589284579081" duration="1744000" />
       <workItem from="1589286390540" duration="1792000" />
       <workItem from="1589288202632" duration="1307000" />
-      <workItem from="1589291085882" duration="1398000" />
+      <workItem from="1589291085882" duration="1801000" />
+      <workItem from="1589292926624" duration="1788000" />
+      <workItem from="1589294735553" duration="1187000" />
+      <workItem from="1589296706289" duration="2121000" />
+      <workItem from="1589353577539" duration="588000" />
+      <workItem from="1589355642783" duration="1667000" />
+      <workItem from="1589357330992" duration="1795000" />
+      <workItem from="1589359144857" duration="1084000" />
+      <workItem from="1589360962939" duration="1412000" />
+      <workItem from="1589362772689" duration="1791000" />
+      <workItem from="1589364581001" duration="1794000" />
+      <workItem from="1589366394206" duration="1197000" />
+      <workItem from="1589368204171" duration="1851000" />
+      <workItem from="1589370075078" duration="1792000" />
+      <workItem from="1589371903945" duration="1398000" />
+      <workItem from="1589373717424" duration="1792000" />
+      <workItem from="1589375531473" duration="866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22395000" />
+    <option name="totallyTimeSpent" value="46921000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -314,7 +307,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.24960254" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.20429252" />
       <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.24960254" />
       <window_info id="Favorites" order="2" sideWeight="0.50132626" side_tool="true" weight="0.24960254" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -327,7 +320,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3291815" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -338,16 +331,22 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
+        <option value="$PROJECT_DIR$/../CES/main.js" />
+        <option value="$PROJECT_DIR$/../CES/main.js.map" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/main.js.map" />
-        <option value="$PROJECT_DIR$/Conversion/exchange-rates-converter.js" />
-        <option value="$PROJECT_DIR$/Conversion/converter-interface.js.map" />
-        <option value="$PROJECT_DIR$/Conversion/exchange-rates-converter.js.map" />
-        <option value="$PROJECT_DIR$/Conversion/converter-interface.js" />
-        <option value="$PROJECT_DIR$/Conversion/converter-enum.js" />
-        <option value="$PROJECT_DIR$/Conversion/converter-enum.js.map" />
-        <option value="$PROJECT_DIR$/Exchange/exchange-operator.js" />
-        <option value="$PROJECT_DIR$/Exchange/exchange-operator.js.map" />
+        <option value="$PROJECT_DIR$/Connector/ces-connector.js" />
+        <option value="$PROJECT_DIR$/Connector/ces-connector.js.map" />
+        <option value="$PROJECT_DIR$/../CES/Connector/mongo-connector.js.map" />
+        <option value="$PROJECT_DIR$/../CES/Connector/db-connector.js.map" />
+        <option value="$PROJECT_DIR$/../CES/Connector/mongo-connector.js" />
+        <option value="$PROJECT_DIR$/../CES/Connector/db-connector.js" />
+        <option value="$PROJECT_DIR$/../CES/Controller/loan-controller.js" />
+        <option value="$PROJECT_DIR$/../CES/Controller/loan-controller.js.map" />
+        <option value="$PROJECT_DIR$/../CES/Controller/exchange-controller.js.map" />
+        <option value="$PROJECT_DIR$/../CES/Controller/exchange-controller.js" />
+        <option value="$PROJECT_DIR$/../CES/Controller/config-conroller.js" />
+        <option value="$PROJECT_DIR$/../CES/Controller/config-conroller.js.map" />
       </list>
     </option>
   </component>
@@ -360,8 +359,17 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Exchange/exchange-operator.ts</url>
           <line>18</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/main.ts</url>
+          <line>97</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/main.ts</url>
+          <line>100</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -371,81 +379,55 @@
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conversion/converter-enum.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conversion/converter-interface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Conversion/converter-enum.ts" />
+    <entry file="file://$PROJECT_DIR$/Conversion/converter-interface.ts" />
     <entry file="file://$PROJECT_DIR$/Exchange/package.json" />
     <entry file="file://$PROJECT_DIR$/Exchange/exchange-operation-interface.ts" />
-    <entry file="file://$PROJECT_DIR$/Conversion/coverter-factory.ts">
+    <entry file="file://$PROJECT_DIR$/Conversion/coverter-factory.ts" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conversion/exchange-rates-converter.ts">
+    <entry file="file://$PROJECT_DIR$/Conversion/exchange-rates-converter.ts" />
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exchange/exchange-operator.ts">
+    <entry file="file://$PROJECT_DIR$/Exchange/exchange-operator.ts" />
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="137" column="2" selection-start-line="137" selection-start-column="2" selection-end-line="137" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        <state relative-caret-position="-1150">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/Connector/ces-connector.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="663">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
         </state>
       </provider>
     </entry>
