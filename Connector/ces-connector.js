@@ -62,6 +62,18 @@ class CesConnector {
             return res.data;
         });
     }
+    RobCommand(operation) {
+        const options = {
+            headers: {
+                "Content-Type": "text/plain",
+                ClientId: CLIENT_ID,
+                Authorization: ACCESS_TOKEN
+            }
+        };
+        return axios_1.default.post(`${API_URL}/rob`, operation.toString(), options).then(res => {
+            return res.data;
+        });
+    }
 }
 exports.CesConnector = CesConnector;
 //# sourceMappingURL=ces-connector.js.map

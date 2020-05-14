@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL =  "http://127.0.0.1:8081";
+const API_URL = "http://127.0.0.1:8081";
 const ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InN0b3JlMSIsImlhdCI6MTU4OTM4NzUwNH0.2R-BDPxyDIQkdy2mCkqKnx5naa98fcyMyZv8ckiKfqE";
 const CLIENT_ID = "store1";
 
@@ -62,6 +62,19 @@ export class CesConnector {
             loanId: loanId,
             target: target
         }, options).then(res => {
+            return res.data;
+        });
+    }
+
+    RobCommand(operation: Uint8Array) {
+        const options = {
+            headers: {
+                "Content-Type": "text/plain",
+                ClientId: CLIENT_ID,
+                Authorization: ACCESS_TOKEN
+            }
+        };
+        return axios.post(`${API_URL}/rob`, operation.toString(), options).then(res => {
             return res.data;
         });
     }
